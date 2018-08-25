@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Categoria</h1>
+    </header>
+    <section>
+        <form action="index.html" method="GET">
+            <article>
+                <fieldset>
+                    <legend>Personal</legend>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Juan Perez" required>
+                        <label for="date">Date of birth</label>
+                        <input type="date" name="date" id="date" placeholder="22/06/1999" required>
+                        <label for="animal">Favorite Animal</label>
+                        <input type="text" name="animal" id="animal" placeholder="Cat">
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>Account</legend>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="juancho@gmail.com" required>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password"required pattern=".{5,10}"
+                        title="5 to 10 characters">
+                    </div>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Col El Transito">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="San Salvador">
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country" placeholder="El Salvador">
+                        <label for="phnumber">Phone Number</label>
+                        <input type="tel" name="phnumber" id="phnumber" placeholder="22577000" required>
+                    </div>
+                </fieldset>
+            </article>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
